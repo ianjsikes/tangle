@@ -114,12 +114,12 @@ export class TimeMachine {
 
         // When a module is setup call its main function immediately.
         // This may only be useful for Rust.
-        {
-            const main = wasm_instance.instance.exports["main"];
-            if (main) {
-                (main as CallableFunction)();
-            }
-        }
+        // {
+        //     const main = wasm_instance.instance.exports["main"];
+        //     if (main) {
+        //         (main as CallableFunction)();
+        //     }
+        // }
 
         time_machine._imports = imports;
         time_machine._fixed_update_interval = fixed_update_interval;
